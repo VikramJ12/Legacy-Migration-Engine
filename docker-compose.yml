@@ -1,20 +1,16 @@
-version: "3.8"
-
 services:
   neo4j:
     image: neo4j:5.18
-    container_name: neo4j
     environment:
       - NEO4J_AUTH=neo4j/strongpass123
     ports:
-      - "7474:7474"   # Neo4j Browser
-      - "7687:7687"   # Bolt protocol
+      - "7474:7474"
+      - "7687:7687"
     volumes:
       - neo4j_data:/data
 
   app:
     build: .
-    container_name: legacy-migration-engine
     environment:
       - NEO4J_URI=bolt://neo4j:7687
       - NEO4J_USER=neo4j
@@ -22,6 +18,8 @@ services:
       - GROQ_API_KEY=your_groq_api_key_here
     ports:
       - "8501:8501"
+    volumes:
+      - ./outputs:/app/outputs
     depends_on:
       - neo4j
 
