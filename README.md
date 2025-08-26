@@ -16,6 +16,7 @@
 - Models pulled to Ollama:
   - `ollama pull nomic-embed-text`
   - `ollama pull llama3.2`
+- Groq API (If Ollama is not installed)
 
 
 ## 🛠️ Setup & Usage
