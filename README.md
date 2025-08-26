@@ -21,5 +21,26 @@ git clone <your-repo> legacy-migration-engine
 cd legacy-migration-engine
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+```
+
+## How to use:
+
+### 1. Build the image:
+```bash
+docker build -t legacy-migration-engine .
+```
+
+### 2. Run the container:
+```bash
+docker run -p 8501:8501 \
+  -e NEO4J_URI=bolt://host.docker.internal:7687 \
+  -e NEO4J_USER=neo4j \
+  -e NEO4J_PASSWORD=yourpassword \
+  -e GROQ_API_KEY=your_groq_api_key_here \
+  legacy-migration-engine
+```
+
+### Note:
+i) If Neo4j is running on your host, use host.docker.internal for NEO4J_URI inside Docker.
+ii) You can override any environment variable at runtime with -e.
 
