@@ -1,0 +1,4 @@
+export NEO4J_URI=bolt://localhost:7687
+export NEO4J_USER=neo4j
+export NEO4J_PASSWORD=strongpass123
+export GROQ_API_KEY=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
