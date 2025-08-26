@@ -1,0 +1,90 @@
+{
+  "nodetype": "FileAST",
+  "children": [
+    {
+      "nodetype": "FuncDef",
+      "children": [
+        {
+          "nodetype": "Decl",
+          "name": "main",
+          "quals": [],
+          "align": [],
+          "storage": [],
+          "funcspec": [],
+          "children": [
+            {
+              "nodetype": "FuncDecl",
+              "children": [
+                {
+                  "nodetype": "TypeDecl",
+                  "declname": "main",
+                  "quals": [],
+                  "align": null,
+                  "children": [
+                    {
+                      "nodetype": "IdentifierType",
+                      "names": [
+                        "int"
+                      ],
+                      "coord": ":1:1"
+                    }
+                  ],
+                  "coord": ":1:5",
+                  "type": "IdentifierType(names=['int'\n                     ]\n               )"
+                }
+              ],
+              "coord": ":1:5",
+              "type": "TypeDecl(declname='main',\n         quals=[\n               ],\n         align=None,\n         type=IdentifierType(names=['int'\n                                   ]\n                             )\n         )"
+            }
+          ],
+          "coord": ":1:5",
+          "type": "FuncDecl(args=None,\n         type=TypeDecl(declname='main',\n                       quals=[\n                             ],\n                       align=None,\n                       type=IdentifierType(names=['int'\n                                                 ]\n                                           )\n                       )\n         )"
+        },
+        {
+          "nodetype": "Compound",
+          "children": [
+            {
+              "nodetype": "FuncCall",
+              "children": [
+                {
+                  "nodetype": "ID",
+                  "name": "printf",
+                  "coord": ":3:5"
+                },
+                {
+                  "nodetype": "ExprList",
+                  "children": [
+                    {
+                      "nodetype": "Constant",
+                      "type": "string",
+                      "value": "\"Hello\"",
+                      "coord": ":3:12"
+                    }
+                  ],
+                  "coord": ":3:12"
+                }
+              ],
+              "name": "ID(name='printf'\n   )",
+              "coord": ":3:5"
+            },
+            {
+              "nodetype": "Return",
+              "children": [
+                {
+                  "nodetype": "Constant",
+                  "type": "int",
+                  "value": "0",
+                  "coord": ":4:12"
+                }
+              ],
+              "coord": ":4:5"
+            }
+          ],
+          "coord": ":2:1"
+        }
+      ],
+      "coord": ":1:5"
+    }
+  ],
+  "coord": "None"
+}
