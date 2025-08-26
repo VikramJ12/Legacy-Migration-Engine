@@ -16,7 +16,6 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 COPY . .
 
 # Set environment variables (override at runtime as needed)
-ENV NEO4J_URI=bolt://localhost:7687
 ENV NEO4J_USER=neo4j
 ENV NEO4J_PASSWORD=strongpass123
 ENV GROQ_API_KEY=your_groq_api_key_here
