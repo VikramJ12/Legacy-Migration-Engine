@@ -1,0 +1,497 @@
+{
+  "nodetype": "FileAST",
+  "children": [
+    {
+      "nodetype": "Decl",
+      "name": "None",
+      "quals": [],
+      "align": [],
+      "storage": [],
+      "funcspec": [],
+      "children": [
+        {
+          "nodetype": "Struct",
+          "name": "Point",
+          "children": [
+            {
+              "nodetype": "Decl",
+              "name": "x",
+              "quals": [],
+              "align": [],
+              "storage": [],
+              "funcspec": [],
+              "children": [
+                {
+                  "nodetype": "TypeDecl",
+                  "declname": "x",
+                  "quals": [],
+                  "align": null,
+                  "children": [
+                    {
+                      "nodetype": "IdentifierType",
+                      "names": [
+                        "int"
+                      ],
+                      "coord": ":2:5"
+                    }
+                  ],
+                  "coord": ":2:9",
+                  "type": "IdentifierType(names=['int'\n                     ]\n               )"
+                }
+              ],
+              "coord": ":2:9",
+              "type": "TypeDecl(declname='x',\n         quals=[\n               ],\n         align=None,\n         type=IdentifierType(names=['int'\n                                   ]\n                             )\n         )"
+            },
+            {
+              "nodetype": "Decl",
+              "name": "y",
+              "quals": [],
+              "align": [],
+              "storage": [],
+              "funcspec": [],
+              "children": [
+                {
+                  "nodetype": "TypeDecl",
+                  "declname": "y",
+                  "quals": [],
+                  "align": null,
+                  "children": [
+                    {
+                      "nodetype": "IdentifierType",
+                      "names": [
+                        "int"
+                      ],
+                      "coord": ":3:5"
+                    }
+                  ],
+                  "coord": ":3:9",
+                  "type": "IdentifierType(names=['int'\n                     ]\n               )"
+                }
+              ],
+              "coord": ":3:9",
+              "type": "TypeDecl(declname='y',\n         quals=[\n               ],\n         align=None,\n         type=IdentifierType(names=['int'\n                                   ]\n                             )\n         )"
+            }
+          ],
+          "coord": ":1:8"
+        }
+      ],
+      "coord": ":1:8",
+      "type": "Struct(name='Point',\n       decls=[Decl(name='x',\n                   quals=[\n                         ],\n                   align=[\n                         ],\n                   storage=[\n                           ],\n                   funcspec=[\n                            ],\n                   type=TypeDecl(declname='x',\n                                 quals=[\n                                       ],\n                                 align=None,\n                                 type=IdentifierType(names=['int'\n                                                           ]\n                                                     )\n                                 ),\n                   init=None,\n                   bitsize=None\n                   ),\n              Decl(name='y',\n                   quals=[\n                         ],\n                   align=[\n                         ],\n                   storage=[\n                           ],\n                   funcspec=[\n                            ],\n                   type=TypeDecl(declname='y',\n                                 quals=[\n                                       ],\n                                 align=None,\n                                 type=IdentifierType(names=['int'\n                                                           ]\n                                                     )\n                                 ),\n                   init=None,\n                   bitsize=None\n                   )\n             ]\n       )"
+    },
+    {
+      "nodetype": "FuncDef",
+      "children": [
+        {
+          "nodetype": "Decl",
+          "name": "move",
+          "quals": [],
+          "align": [],
+          "storage": [],
+          "funcspec": [],
+          "children": [
+            {
+              "nodetype": "FuncDecl",
+              "children": [
+                {
+                  "nodetype": "ParamList",
+                  "children": [
+                    {
+                      "nodetype": "Decl",
+                      "name": "p",
+                      "quals": [],
+                      "align": [],
+                      "storage": [],
+                      "funcspec": [],
+                      "children": [
+                        {
+                          "nodetype": "PtrDecl",
+                          "quals": [],
+                          "children": [
+                            {
+                              "nodetype": "TypeDecl",
+                              "declname": "p",
+                              "quals": [],
+                              "align": null,
+                              "children": [
+                                {
+                                  "nodetype": "Struct",
+                                  "name": "Point",
+                                  "coord": ":6:18"
+                                }
+                              ],
+                              "coord": ":6:25",
+                              "type": "Struct(name='Point',\n       decls=None\n       )"
+                            }
+                          ],
+                          "coord": ":6:24",
+                          "type": "TypeDecl(declname='p',\n         quals=[\n               ],\n         align=None,\n         type=Struct(name='Point',\n                     decls=None\n                     )\n         )"
+                        }
+                      ],
+                      "coord": ":6:24",
+                      "type": "PtrDecl(quals=[\n              ],\n        type=TypeDecl(declname='p',\n                      quals=[\n                            ],\n                      align=None,\n                      type=Struct(name='Point',\n                                  decls=None\n                                  )\n                      )\n        )"
+                    },
+                    {
+                      "nodetype": "Decl",
+                      "name": "dx",
+                      "quals": [],
+                      "align": [],
+                      "storage": [],
+                      "funcspec": [],
+                      "children": [
+                        {
+                          "nodetype": "TypeDecl",
+                          "declname": "dx",
+                          "quals": [],
+                          "align": null,
+                          "children": [
+                            {
+                              "nodetype": "IdentifierType",
+                              "names": [
+                                "int"
+                              ],
+                              "coord": ":6:28"
+                            }
+                          ],
+                          "coord": ":6:32",
+                          "type": "IdentifierType(names=['int'\n                     ]\n               )"
+                        }
+                      ],
+                      "coord": ":6:32",
+                      "type": "TypeDecl(declname='dx',\n         quals=[\n               ],\n         align=None,\n         type=IdentifierType(names=['int'\n                                   ]\n                             )\n         )"
+                    },
+                    {
+                      "nodetype": "Decl",
+                      "name": "dy",
+                      "quals": [],
+                      "align": [],
+                      "storage": [],
+                      "funcspec": [],
+                      "children": [
+                        {
+                          "nodetype": "TypeDecl",
+                          "declname": "dy",
+                          "quals": [],
+                          "align": null,
+                          "children": [
+                            {
+                              "nodetype": "IdentifierType",
+                              "names": [
+                                "int"
+                              ],
+                              "coord": ":6:36"
+                            }
+                          ],
+                          "coord": ":6:40",
+                          "type": "IdentifierType(names=['int'\n                     ]\n               )"
+                        }
+                      ],
+                      "coord": ":6:40",
+                      "type": "TypeDecl(declname='dy',\n         quals=[\n               ],\n         align=None,\n         type=IdentifierType(names=['int'\n                                   ]\n                             )\n         )"
+                    }
+                  ],
+                  "coord": ":6:24"
+                },
+                {
+                  "nodetype": "TypeDecl",
+                  "declname": "move",
+                  "quals": [],
+                  "align": null,
+                  "children": [
+                    {
+                      "nodetype": "IdentifierType",
+                      "names": [
+                        "void"
+                      ],
+                      "coord": ":6:1"
+                    }
+                  ],
+                  "coord": ":6:6",
+                  "type": "IdentifierType(names=['void'\n                     ]\n               )"
+                }
+              ],
+              "coord": ":6:6",
+              "type": "TypeDecl(declname='move',\n         quals=[\n               ],\n         align=None,\n         type=IdentifierType(names=['void'\n                                   ]\n                             )\n         )"
+            }
+          ],
+          "coord": ":6:6",
+          "type": "FuncDecl(args=ParamList(params=[Decl(name='p',\n                                     quals=[\n                                           ],\n                                     align=[\n                                           ],\n                                     storage=[\n                                             ],\n                                     funcspec=[\n                                              ],\n                                     type=PtrDecl(quals=[\n                                                        ],\n                                                  type=TypeDecl(declname='p',\n                                                                quals=[\n                                                                      ],\n                                                                align=None,\n                                                                type=Struct(name='Point',\n                                                                            decls=None\n                                                                            )\n                                                                )\n                                                  ),\n                                     init=None,\n                                     bitsize=None\n                                     ),\n                                Decl(name='dx',\n                                     quals=[\n                                           ],\n                                     align=[\n                                           ],\n                                     storage=[\n                                             ],\n                                     funcspec=[\n                                              ],\n                                     type=TypeDecl(declname='dx',\n                                                   quals=[\n                                                         ],\n                                                   align=None,\n                                                   type=IdentifierType(names=['int'\n                                                                             ]\n                                                                       )\n                                                   ),\n                                     init=None,\n                                     bitsize=None\n                                     ),\n                                Decl(name='dy',\n                                     quals=[\n                                           ],\n                                     align=[\n                                           ],\n                                     storage=[\n                                             ],\n                                     funcspec=[\n                                              ],\n                                     type=TypeDecl(declname='dy',\n                                                   quals=[\n                                                         ],\n                                                   align=None,\n                                                   type=IdentifierType(names=['int'\n                                                                             ]\n                                                                       )\n                                                   ),\n                                     init=None,\n                                     bitsize=None\n                                     )\n                               ]\n                        ),\n         type=TypeDecl(declname='move',\n                       quals=[\n                             ],\n                       align=None,\n                       type=IdentifierType(names=['void'\n                                                 ]\n                                           )\n                       )\n         )"
+        },
+        {
+          "nodetype": "Compound",
+          "children": [
+            {
+              "nodetype": "Assignment",
+              "op": "+=",
+              "children": [
+                {
+                  "nodetype": "StructRef",
+                  "type": "->",
+                  "children": [
+                    {
+                      "nodetype": "ID",
+                      "name": "p",
+                      "coord": ":7:5"
+                    },
+                    {
+                      "nodetype": "ID",
+                      "name": "x",
+                      "coord": ":7:8"
+                    }
+                  ],
+                  "name": "ID(name='p'\n   )",
+                  "coord": ":7:5"
+                },
+                {
+                  "nodetype": "ID",
+                  "name": "dx",
+                  "coord": ":7:13"
+                }
+              ],
+              "coord": ":7:5"
+            },
+            {
+              "nodetype": "Assignment",
+              "op": "+=",
+              "children": [
+                {
+                  "nodetype": "StructRef",
+                  "type": "->",
+                  "children": [
+                    {
+                      "nodetype": "ID",
+                      "name": "p",
+                      "coord": ":8:5"
+                    },
+                    {
+                      "nodetype": "ID",
+                      "name": "y",
+                      "coord": ":8:8"
+                    }
+                  ],
+                  "name": "ID(name='p'\n   )",
+                  "coord": ":8:5"
+                },
+                {
+                  "nodetype": "ID",
+                  "name": "dy",
+                  "coord": ":8:13"
+                }
+              ],
+              "coord": ":8:5"
+            }
+          ],
+          "coord": ":6:1"
+        }
+      ],
+      "coord": ":6:6"
+    },
+    {
+      "nodetype": "FuncDef",
+      "children": [
+        {
+          "nodetype": "Decl",
+          "name": "main",
+          "quals": [],
+          "align": [],
+          "storage": [],
+          "funcspec": [],
+          "children": [
+            {
+              "nodetype": "FuncDecl",
+              "children": [
+                {
+                  "nodetype": "TypeDecl",
+                  "declname": "main",
+                  "quals": [],
+                  "align": null,
+                  "children": [
+                    {
+                      "nodetype": "IdentifierType",
+                      "names": [
+                        "int"
+                      ],
+                      "coord": ":11:1"
+                    }
+                  ],
+                  "coord": ":11:5",
+                  "type": "IdentifierType(names=['int'\n                     ]\n               )"
+                }
+              ],
+              "coord": ":11:5",
+              "type": "TypeDecl(declname='main',\n         quals=[\n               ],\n         align=None,\n         type=IdentifierType(names=['int'\n                                   ]\n                             )\n         )"
+            }
+          ],
+          "coord": ":11:5",
+          "type": "FuncDecl(args=None,\n         type=TypeDecl(declname='main',\n                       quals=[\n                             ],\n                       align=None,\n                       type=IdentifierType(names=['int'\n                                                 ]\n                                           )\n                       )\n         )"
+        },
+        {
+          "nodetype": "Compound",
+          "children": [
+            {
+              "nodetype": "Decl",
+              "name": "p",
+              "quals": [],
+              "align": [],
+              "storage": [],
+              "funcspec": [],
+              "children": [
+                {
+                  "nodetype": "TypeDecl",
+                  "declname": "p",
+                  "quals": [],
+                  "align": null,
+                  "children": [
+                    {
+                      "nodetype": "Struct",
+                      "name": "Point",
+                      "coord": ":12:12"
+                    }
+                  ],
+                  "coord": ":12:18",
+                  "type": "Struct(name='Point',\n       decls=None\n       )"
+                },
+                {
+                  "nodetype": "InitList",
+                  "children": [
+                    {
+                      "nodetype": "Constant",
+                      "type": "int",
+                      "value": "0",
+                      "coord": ":12:23"
+                    },
+                    {
+                      "nodetype": "Constant",
+                      "type": "int",
+                      "value": "0",
+                      "coord": ":12:26"
+                    }
+                  ],
+                  "coord": ":12:23"
+                }
+              ],
+              "coord": ":12:18",
+              "type": "TypeDecl(declname='p',\n         quals=[\n               ],\n         align=None,\n         type=Struct(name='Point',\n                     decls=None\n                     )\n         )"
+            },
+            {
+              "nodetype": "FuncCall",
+              "children": [
+                {
+                  "nodetype": "ID",
+                  "name": "move",
+                  "coord": ":13:5"
+                },
+                {
+                  "nodetype": "ExprList",
+                  "children": [
+                    {
+                      "nodetype": "UnaryOp",
+                      "op": "&",
+                      "children": [
+                        {
+                          "nodetype": "ID",
+                          "name": "p",
+                          "coord": ":13:11"
+                        }
+                      ],
+                      "coord": ":13:11"
+                    },
+                    {
+                      "nodetype": "Constant",
+                      "type": "int",
+                      "value": "3",
+                      "coord": ":13:14"
+                    },
+                    {
+                      "nodetype": "Constant",
+                      "type": "int",
+                      "value": "4",
+                      "coord": ":13:17"
+                    }
+                  ],
+                  "coord": ":13:11"
+                }
+              ],
+              "name": "ID(name='move'\n   )",
+              "coord": ":13:5"
+            },
+            {
+              "nodetype": "FuncCall",
+              "children": [
+                {
+                  "nodetype": "ID",
+                  "name": "printf",
+                  "coord": ":14:5"
+                },
+                {
+                  "nodetype": "ExprList",
+                  "children": [
+                    {
+                      "nodetype": "Constant",
+                      "type": "string",
+                      "value": "\"%d %d\\n\"",
+                      "coord": ":14:12"
+                    },
+                    {
+                      "nodetype": "StructRef",
+                      "type": ".",
+                      "children": [
+                        {
+                          "nodetype": "ID",
+                          "name": "p",
+                          "coord": ":14:23"
+                        },
+                        {
+                          "nodetype": "ID",
+                          "name": "x",
+                          "coord": ":14:25"
+                        }
+                      ],
+                      "name": "ID(name='p'\n   )",
+                      "coord": ":14:23"
+                    },
+                    {
+                      "nodetype": "StructRef",
+                      "type": ".",
+                      "children": [
+                        {
+                          "nodetype": "ID",
+                          "name": "p",
+                          "coord": ":14:28"
+                        },
+                        {
+                          "nodetype": "ID",
+                          "name": "y",
+                          "coord": ":14:30"
+                        }
+                      ],
+                      "name": "ID(name='p'\n   )",
+                      "coord": ":14:28"
+                    }
+                  ],
+                  "coord": ":14:12"
+                }
+              ],
+              "name": "ID(name='printf'\n   )",
+              "coord": ":14:5"
+            },
+            {
+              "nodetype": "Return",
+              "children": [
+                {
+                  "nodetype": "Constant",
+                  "type": "int",
+                  "value": "0",
+                  "coord": ":15:12"
+                }
+              ],
+              "coord": ":15:5"
+            }
+          ],
+          "coord": ":11:1"
+        }
+      ],
+      "coord": ":11:5"
+    }
+  ],
+  "coord": "None"
+}

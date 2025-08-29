@@ -1,9 +1,8 @@
 FROM python:3.12-slim
 
-# System dependencies for pycparser, Neo4j, and build tools
+# System dependencies for clang, Neo4j, and build tools
 RUN apt-get update && \
-    apt-get install -y gcc build-essential libffi-dev curl && \
-    apt-get autoremove -y && \
+    apt-get install -y gcc build-essential libffi-dev curl clang libclang-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # Set work directory

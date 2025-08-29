@@ -1,5 +1,7 @@
 """Attach embeddings to ASTNode nodes using Ollama embeddings and save into Neo4j."""
 import ollama
+ollama.api_url = "http://host.docker.internal:11434"
+
 from .neo4j_client import run_cypher
 import math
 import ast
@@ -43,7 +45,7 @@ def embed_text(text: str, model: str = 'nomic-embed-text:latest') -> list:
 
     raise RuntimeError("Unexpected embedding response from Ollama")
 
-def attach_embeddings_to_nodes(limit: int = 200, model: str = 'nomic-embed-text'):
+def attach_embeddings_to_nodes(limit: int = 200, model: str = 'nomic-embed-text:latest'):
     rows = run_cypher('MATCH (n:ASTNode) RETURN n.node_id AS node_id, n.nodetype AS nodetype, n.name AS name LIMIT $limit', {'limit': limit})
     for r in rows:
         node_id = r['node_id']

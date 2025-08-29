@@ -14,6 +14,7 @@ DEFAULT_MODEL = 'llama3.2'
 GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 GROQ_CHAT_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama3-8b-8192"
+OLLAMA_URL = "http://host.docker.internal:11434"
 
 def get_top_ast_context(limit: int = 20) -> str:
     rows = run_cypher('MATCH (n:ASTNode) RETURN n.node_id AS id, n.nodetype AS nodetype, n.name AS name LIMIT $l', {'l': limit})
